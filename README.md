@@ -1,3 +1,9 @@
+```
+---
+title: KuaiRand
+---
+```
+
 # KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos 
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRec/blob/main/LICENSE)

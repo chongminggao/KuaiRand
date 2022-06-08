@@ -10,7 +10,6 @@ $header-bg-color-secondary: #1caff2 !default;
 
 
 .page-header {
-  font-weight: bold;
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
@@ -54,6 +53,7 @@ h1 {
 }
 
 h0 {
+  font-weight: bold;
   font-size: 2.5em;
   margin: 0.67em 0;
 }
