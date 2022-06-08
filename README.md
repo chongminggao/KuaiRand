@@ -23,9 +23,9 @@ Compared with other datasets with random exposure, KuaiRand has the following ad
 - ✅ It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
 - ✅ It has the most comprehensive side information including explicit user IDs, interaction timestamps, and rich features for users and items.
 - ✅ It has 15 policies with each catered for a special recommendation scenario in Kuaishou App.
-- :white_check_mark: We introduce 12 feedback signals (e.g., click, like, and view time) for each interaction to describe the user's comprehensive feedback.
-- :white_check_mark: Each user has thousands of historical interactions on average.
-- :white_check_mark: It has three versions to support various research directions in recommendation.
+- ✅ We introduce 12 feedback signals (e.g., click, like, and view time) for each interaction to describe the user's comprehensive feedback.
+- ✅ Each user has thousands of historical interactions on average.
+- ✅ It has three versions to support various research directions in recommendation.
 
 ----
 
@@ -45,12 +45,12 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 | Dataset          | Collection Policy  | #Users |   #Items   | #Interactions | #User features | #Item features | Feedback      | Timestamp |
 | ---------------- | :----------------: | :----: | :--------: | :-----------: | :--------------: | :--------------: | :-------------: | :---------: |
-| **KuaiRand-27K** |    15 policies     | 27,285 | 32,038,725 |  322,278,385  | 30             | 62            | 12 signals    | :heavy_check_mark: |
+| **KuaiRand-27K** |    15 policies     | 27,285 | 32,038,725 |  322,278,385  | 30             | 62            | 12 signals    | ✔️ |
 |                  |   Random policy    | 27,285 |   7,583    |   1,186,059   | 30             | 62            | 12 signals    | 	✔️ |
-| **KuaiRand-1K**  |    15 policies     | 1,000  | 4,369,953  |  11,713,045   | 30             | 62            | 12 signals    | :heavy_check_mark: |
-|                  |   Random policy    | 1,000  |   7,388    |    43,028     | 30             | 62            | 12 signals    | :heavy_check_mark: |
-| **KuaiRand-Pure**  |    15 policies     | 27,285 | 7,551 | 1,436,609 | 30             | 62            | 12 signals    | :heavy_check_mark: |
-|                  |   Random policy    | 27,285 | 7,583 | 1,186,059 | 30             | 62            | 12 signals    | :heavy_check_mark: |
+| **KuaiRand-1K**  |    15 policies     | 1,000  | 4,369,953  |  11,713,045   | 30             | 62            | 12 signals    | ✔️ |
+|                  |   Random policy    | 1,000  |   7,388    |    43,028     | 30             | 62            | 12 signals    | ✔️ |
+| **KuaiRand-Pure**  |    15 policies     | 27,285 | 7,551 | 1,436,609 | 30             | 62            | 12 signals    | ✔️ |
+|                  |   Random policy    | 27,285 | 7,583 | 1,186,059 | 30             | 62            | 12 signals    | ✔️ |
 
 
 ### Which version should I use???
@@ -158,7 +158,7 @@ The file structure of the three datasets are listed as follows:
 
 ---
 
-#### :one: Descriptions of the fields in `log_xxx.csv` 
+####  1️⃣ Descriptions of the fields in `log_xxx.csv` 
 
 There are three log files:
 
@@ -190,7 +190,7 @@ There are three log files:
 
 ---
 
-#### :two: Descriptions of the fields in `user_features.csv`
+####  2️⃣ Descriptions of the fields in `user_features.csv`
 
 | Field Name:              | Description                                              | Type    | Example                   |
 | ------------------------ | -------------------------------------------------------- | ------- | ------------------------- |
@@ -228,7 +228,7 @@ There are three log files:
 
 ---
 
-#### :three: Descriptions of the fields in `video_features_basic.csv`
+####  3️⃣ Descriptions of the fields in `video_features_basic.csv`
 
 | Field Name:    | Description                                                  | Type  | Example       |
 | -------------- | ------------------------------------------------------------ | ----- | ------------- |
@@ -247,15 +247,15 @@ There are three log files:
 
 ---
 
-#### :four: Descriptions of the fields in `video_features_statistic.csv`
+#### 4️⃣ Descriptions of the fields in `video_features_statistic.csv`
 
-:bangbang: Different from the basic features, the statistical features are the average statistics of the video each day over the one month. For example, in the following table, the video 9288071 have 66 counts over this one month (a video can have multiple counts each day on different scenarios, e.g., on April 8, `show_cnt`=80 on the main page and `show_cnt`=65 on the recommendation page of the App)
+‼️ Different from the basic features, the statistical features are the average statistics of the video each day over the one month. For example, in the following table, the video 9288071 have 66 counts over this one month (a video can have multiple counts each day on different scenarios, e.g., on April 8, `show_cnt`=80 on the main page and `show_cnt`=65 on the recommendation page of the App)
 
 | Field Name:              | Description                                                  | Type    | Example   |
 | ------------------------ | ------------------------------------------------------------ | ------- | --------- |
 | video_id                 | The ID of the video.                                         | int64   | 9288071   |
 | counts                   | The number of statistics.                                    | int64   | 66        |
-| show_cnt                 | The number of shows of this video **(average on each day and each scenario over the one month. This applies to all the following fields)** | float64 | 75.212    |
+| show_cnt                 | The number of shows of this video **(averaged on each day and each scenario over the one month. This applies to all the following fields)** | float64 | 75.212    |
 | show_user_num            | The number of users who received the recommendation of this video. | float64 | 66.985    |
 | play_cnt                 | The number of plays.                                         | float64 | 9.409     |
 | play_user_num            | The number of users who plays this video.                    | float64 | 8.121     |
