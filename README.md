@@ -20,9 +20,9 @@ In the random exposure stage, each recommended video in the dataset has an equal
 
 Compared with other datasets with random exposure, KuaiRand has the following advantages:
 
-- :white_check_mark: It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
-- :white_check_mark: It has the most comprehensive side information including explicit user IDs, interaction timestamps, and rich features for users and items.
-- :white_check_mark: It has 15 policies with each catered for a special recommendation scenario in Kuaishou App.
+- ✅ It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
+- ✅ It has the most comprehensive side information including explicit user IDs, interaction timestamps, and rich features for users and items.
+- ✅ It has 15 policies with each catered for a special recommendation scenario in Kuaishou App.
 - :white_check_mark: We introduce 12 feedback signals (e.g., click, like, and view time) for each interaction to describe the user's comprehensive feedback.
 - :white_check_mark: Each user has thousands of historical interactions on average.
 - :white_check_mark: It has three versions to support various research directions in recommendation.
@@ -46,7 +46,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 | Dataset          | Collection Policy  | #Users |   #Items   | #Interactions | #User features | #Item features | Feedback      | Timestamp |
 | ---------------- | :----------------: | :----: | :--------: | :-----------: | :--------------: | :--------------: | :-------------: | :---------: |
 | **KuaiRand-27K** |    15 policies     | 27,285 | 32,038,725 |  322,278,385  | 30             | 62            | 12 signals    | :heavy_check_mark: |
-|                  |   Random policy    | 27,285 |   7,583    |   1,186,059   | 30             | 62            | 12 signals    | :heavy_check_mark: |
+|                  |   Random policy    | 27,285 |   7,583    |   1,186,059   | 30             | 62            | 12 signals    | 	✔️ |
 | **KuaiRand-1K**  |    15 policies     | 1,000  | 4,369,953  |  11,713,045   | 30             | 62            | 12 signals    | :heavy_check_mark: |
 |                  |   Random policy    | 1,000  |   7,388    |    43,028     | 30             | 62            | 12 signals    | :heavy_check_mark: |
 | **KuaiRand-Pure**  |    15 policies     | 27,285 | 7,551 | 1,436,609 | 30             | 62            | 12 signals    | :heavy_check_mark: |
