@@ -2,7 +2,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRec/blob/main/LICENSE)
 
-*KuaiRand* is an unbiased recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [快手|Kuaishou](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
+*KuaiRand* is an unbiased recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [Kuaishou(kuaishou)](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
 
 ## Overview:
 
@@ -88,7 +88,7 @@ wget https://chongming.myds.me:61364/data/KuaiRand-1K.tar.gz --no-check-certific
 tar -zxvf KuaiRand-1K.tar.gz
 ```
 
-###### KuaiRand-Pure (compressed size: 1.14GB; uncompressed size: 4.8GB)
+###### KuaiRand-Pure (compressed size: 45.2MB; uncompressed size: 194MB)
 
 ```shell
 wget https://chongming.myds.me:61364/data/KuaiRand-Pure.tar.gz --no-check-certificate
