@@ -12,7 +12,7 @@ The following figure gives an example of the dataset. It illustrates a user inte
 
 These feedback signals are collected from the two main user interfaces (UI) in Kuaishou APP shown as follows:
 
-<img src="figs/kuaishou-app.png" alt="kuaishou-app" style="zoom:35%;" />
+<img src="figs/kuaishou-app.png" alt="kuaishou-app" style="display: block;margin: auto;zoom:35%;" />
 
 In the random exposure stage, each recommended video in the dataset has an equal probability being replaced by a random video sampled from an item pools. About $0.37\%$ Interactions are replaced in the final results. 
 
