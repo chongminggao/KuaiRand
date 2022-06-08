@@ -57,3 +57,25 @@ h0 {
   font-size: 3em;
   margin: 0.67em 0;
 }
+
+.dice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(figs/dice.png) no-repeat center center;
+
+  @include large {
+    background-size: 200px;
+    background-position: 70% 30%;
+  }
+  @include medium {
+    background-size: 200px;
+    background-position: 80% 25%;
+  }
+  @include small {
+    background-size: 150px;
+    background-position: 95% 25%;
+  }
+}
