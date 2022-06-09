@@ -59,22 +59,28 @@ h0 {
 }
 
 .dice {
+  width: 200px;
+  height: 150px;
   position: absolute;
   left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
   background: url(../../figs/dice.png) no-repeat center center;
 
   @include large {
+    right: 25%;
+    top: 230pt;
     background-size: 200px;
     background-position: 70% 30%;
   }
   @include medium {
+    right: 15%;
+    top: 180pt;
     background-size: 200px;
     background-position: 80% 25%;
   }
   @include small {
+    right: 5%;
+    top: 150pt;
     background-size: 150px;
     background-position: 95% 25%;
   }
