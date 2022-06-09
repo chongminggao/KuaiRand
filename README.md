@@ -2,7 +2,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRand/blob/main/LICENSE)
 
-*KuaiRand* is an unbiased recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [Kuaishou (快手)](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
+*KuaiRand* is an unbiased sequential recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [Kuaishou (快手)](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
 
 ## Overview:
 
@@ -20,7 +20,7 @@ In the random exposure stage, each recommended video in the dataset has an equal
 
 Compared with other datasets with random exposure, KuaiRand has the following advantages:
 
-- ✅ It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
+- ✅ It is the first sequential recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
 - ✅ It has the most comprehensive side information including explicit user IDs, interaction timestamps, and rich features for users and items.
 - ✅ It has 15 policies with each catered for a special recommendation scenario in Kuaishou App.
 - ✅ We introduce 12 feedback signals (e.g., click, like, and view time) for each interaction to describe the user's comprehensive feedback.
