@@ -55,14 +55,15 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 ### Which version should I use???
 
-##### Reasons to use *KuaiRand-27K* or *KuaiRand-1K*:
+- ##### Reasons to use *KuaiRand-27K* or *KuaiRand-1K*:
 
-- Your research needs rigorous sequential logs, such as off-policy evaluation (OPE), Reinforcement learning (RL), or long sequential recommendation.
+  - Your research needs rigorous sequential logs, such as off-policy evaluation (OPE), Reinforcement learning (RL), or long sequential recommendation.
 
-##### Reasons to use *KuaiRand-Pure*:
+- ##### Reasons to use *KuaiRand-Pure*:
 
-- The sequential information is not necessary in your research OR If you are OK with the incomplete sequential logs. For example, if you are studying debiasing in collaborative filtering models or multi-task modeling in recommendation.
-- If your model can only run with small-size data.
+  - The sequential information is not necessary in your research OR If you are OK with the incomplete sequential logs. For example, if you are studying debiasing in collaborative filtering models or multi-task modeling in recommendation.
+  - If your model can only run with small-size data.
+
 
 ---
 
