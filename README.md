@@ -39,7 +39,7 @@ We release three versions of KuaiRand for different usage:
 
 The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces is shown as follows.
 
-![kuaidata](./figs/three-versions.png)
+![kuaidata](./figs/three-version.png)
 
 ##### The basic statistics of the three versions are summarized as follows:
 
@@ -53,7 +53,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 |                  |   Random policy    | 27,285 | 7,583 | 1,186,059 | 30             | 62            | 12 signals    | ✔️ |
 
 
-### Which version should I use???
+### Which version should I use?
 
 - ##### Reasons to use *KuaiRand-27K* or *KuaiRand-1K*:
 
