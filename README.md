@@ -34,7 +34,7 @@ Compared with other datasets with random exposure, KuaiRand has the following ad
 We release three versions of KuaiRand for different usage:
 
 - **KuaiRand-27K (23GB logs +23GB features):** the complete KuaiRand dataset that has over 27K users and 32 millions videos.
-- **KuaiRand-1K  (1.3GB logs + 3.5GB features):** randomly sample 1,000 users from *KuaiRand-27K*, then remove all irrelevant videos. There are 4 millions videos rest. 
+- **KuaiRand-1K  (829MB logs + 3.5GB features):** randomly sample 1,000 users from *KuaiRand-27K*, then remove all irrelevant videos. There are 4 millions videos rest. 
 - **KuaiRand-Pure  (184MB logs + 10MB features):** only keeps the logs for the 7582 videos in the candidate pool. 
 
 The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces is shown as follows.
@@ -81,7 +81,7 @@ wget https://chongming.myds.me:61364/data/KuaiRand-27K.tar.gz --no-check-certifi
 tar -zxvf KuaiRand-27K.tar.gz
 ```
 
-##### KuaiRand-1K (compressed size: 1.14GB; uncompressed size: 4.8GB)
+##### KuaiRand-1K (compressed size: 1GB; uncompressed size: 4.3GB)
 
 
 ```shell
@@ -128,12 +128,11 @@ The file structure of the three datasets are listed as follows:
   └── load_data_27k.py
   ```
 
-##### KuaiRand-1K (4.8GB)
+##### KuaiRand-1K (4.3GB)
 
   ```shell
   KuaiRand-1K
-  ├── data (4.8GB)
-  │   ├── log_4_22_to_5_08_1k.csv (480MB)
+  ├── data (4.3GB)
   │   ├── log_random_4_22_to_5_08_1k.csv (2.9MB)
   │   ├── log_standard_4_08_to_4_21_1k.csv (368MB)
   │   ├── log_standard_4_22_to_5_08_1k.csv (481MB)
