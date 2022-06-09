@@ -243,7 +243,7 @@ There are three log files:
 | server_height  | The height of this video on the server.                      | int64 | 1280          |
 | music_id       | Background music ID of this video.                           | int64 | 989206467     |
 | music_type     | Background music type of this video.                         | int64 | 4             |
-| tag            | A list of categories (labels) of this video.                 | str   | "12,65"       |
+| tag            | A list of key categories (labels) of this video.             | str   | "12,65"       |
 
 ---
 
