@@ -3,8 +3,8 @@
 
 // Headers
 $header-heading-color: #fff !default;
-$header-bg-color: #ff7100 !default;
-$header-bg-color-secondary: #1caff2 !default;
+$header-bg-color: #23a3ee !default;
+$header-bg-color-secondary: #040c5e !default;
 
 @import 'jekyll-theme-cayman';
 
@@ -64,7 +64,7 @@ h0 {
   right: 0;
   top: 0;
   bottom: 0;
-  background: url(figs/dice.png) no-repeat center center;
+  background: url(../../figs/dice.png) no-repeat center center;
 
   @include large {
     background-size: 200px;
@@ -78,4 +78,8 @@ h0 {
     background-size: 150px;
     background-position: 95% 25%;
   }
+}
+
+.main-content h5, .main-content h6 {
+  color: #1e4f8a
 }

@@ -41,7 +41,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 ![kuaidata](./figs/three-versions.png)
 
-###### The basic statistics of the three versions are summarized as follows:
+##### The basic statistics of the three versions are summarized as follows:
 
 | Dataset          | Collection Policy  | #Users |   #Items   | #Interactions | #User features | #Item features | Feedback      | Timestamp |
 | ---------------- | :----------------: | :----: | :--------: | :-----------: | :--------------: | :--------------: | :-------------: | :---------: |
@@ -73,14 +73,14 @@ We provides several options to download the datasets:
 
 #### Option 1. Download via the "wget" command.
 
-###### KuaiRand-27K (compressed size: 9.21GB; uncompressed size: 46GB)
+##### KuaiRand-27K (compressed size: 9.21GB; uncompressed size: 46GB)
 
 ```shell
 wget https://chongming.myds.me:61364/data/KuaiRand-27K.tar.gz --no-check-certificate
 tar -zxvf KuaiRand-27K.tar.gz
 ```
 
-###### KuaiRand-1K (compressed size: 1.14GB; uncompressed size: 4.8GB)
+##### KuaiRand-1K (compressed size: 1.14GB; uncompressed size: 4.8GB)
 
 
 ```shell
@@ -88,7 +88,7 @@ wget https://chongming.myds.me:61364/data/KuaiRand-1K.tar.gz --no-check-certific
 tar -zxvf KuaiRand-1K.tar.gz
 ```
 
-###### KuaiRand-Pure (compressed size: 45.2MB; uncompressed size: 194MB)
+##### KuaiRand-Pure (compressed size: 45.2MB; uncompressed size: 194MB)
 
 ```shell
 wget https://chongming.myds.me:61364/data/KuaiRand-Pure.tar.gz --no-check-certificate
