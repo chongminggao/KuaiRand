@@ -72,6 +72,8 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 We provides several options to download the datasets:
 
+**==（Please do not distribute this dataset when the correspond paper is still under review.）==**
+
 #### Option 1. Download via the "wget" command.
 
 ##### KuaiRand-27K (compressed size: 9.21GB; uncompressed size: 46GB)
