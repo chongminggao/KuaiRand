@@ -35,7 +35,7 @@ We release three versions of KuaiRand for different usage:
 
 - **KuaiRand-27K (23GB logs +23GB features):** the complete KuaiRand dataset that has over 27K users and 32 millions videos.
 - **KuaiRand-1K  (829MB logs + 3.5GB features):** randomly sample 1,000 users from *KuaiRand-27K*, then remove all irrelevant videos. There are 4 millions videos rest. 
-- **KuaiRand-Pure  (184MB logs + 10MB features):** only keeps the logs for the 7582 videos in the candidate pool. 
+- **KuaiRand-Pure  (184MB logs + 10MB features):** only keeps the logs for the 7583 videos in the candidate pool. 
 
 The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces is shown as follows.
 
@@ -72,7 +72,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 We provides several options to download the datasets:
 
-**==（Please do not distribute this dataset when the correspond paper is still under review.）==**
+**（Please do not distribute this dataset when the correspond paper is still under review.）**
 
 #### Option 1. Download via the "wget" command.
 
