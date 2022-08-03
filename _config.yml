@@ -3,3 +3,5 @@ google_analytics: G-GZNFK3DY0Z
 theme: jekyll-theme-cayman
 title: KuaiRand
 description: "An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+github:
+  is_project_page: false

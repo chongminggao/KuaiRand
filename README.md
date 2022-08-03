@@ -72,7 +72,9 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 We provides several options to download the datasets:
 
-**（Please do not distribute this dataset when the correspond paper is still under review.）**
+(Sorry, The paper is just accepted by CIKM '22 and we are preparing the final version and its right.)
+
+<!-- **（Please do not distribute this dataset when the correspond paper is still under review.）**
 
 #### Option 1. Download via the "wget" command.
 
@@ -105,7 +107,7 @@ tar -zxvf KuaiRand-Pure.tar.gz
   - Optional link 2: [USTC Drive (中科大)](https://rec.ustc.edu.cn/share/e10dfc20-e657-11ec-9f09-f306a85f66ae)
 
 The script `loaddata.py` provides a simple way to load the data via Pandas in Python.
-
+ -->
 ---
 
 ## Data Descriptions
