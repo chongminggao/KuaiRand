@@ -27,6 +27,22 @@ Compared with other datasets with random exposure, KuaiRand has the following ad
 - ✅ Each user has thousands of historical interactions on average.
 - ✅ It has three versions to support various research directions in recommendation.
 
+If you find it helpful, please cite our paper:
+ [![LINK](https://img.shields.io/badge/-Paper%20Link-lightgrey)](https://arxiv.org/abs/2208.08696) [![PDF](https://img.shields.io/badge/-PDF-red)](https://arxiv.org/pdf/2208.08696.pdf)
+
+```
+@inproceedings{gao2022kuairand,
+  author = {Chongming Gao and Shijun Li and Yuan Zhang and Jiawei Chen and Biao Li and Wenqiang Lei and Peng Jiang and Xiangnan He},
+  title = {KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos},
+  year = {2022},
+  url = {https://doi.org/10.1145/3511808.3557624},
+  doi = {10.1145/3511808.3557624},
+  booktitle = {Proceedings of the 31st ACM International Conference on Information and Knowledge Management},
+  numpages = {5},
+  location = {Atlanta, GA, USA},
+  series = {CIKM '22}
+}
+```
 ----
 
 ## Three Versions and Suggestions:
