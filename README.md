@@ -51,7 +51,7 @@ If you find it helpful, please cite our paper:
 
 **2022.08.23 :tired_face::** 国家互联网信息办公室于2022年7月7日出台了非常严格的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们不得已中止对国外机构提供该数据集。**目前仅能将该数据提供给中国境内机构使用**。对此，我们非常无奈，也非常抱歉。当快手公司的法务部解决这一问题后，我们将马上向所有人公开该数据。
 
-
+---
 
 ## Download the data:
 
@@ -62,7 +62,6 @@ Please send us your *name*, *institution* (which must lie in China) via this ema
 We are very sorry for the inconvenience! :sob: We will try to overcome this problem soon.
 
 由于国家最近出台的个人隐私信息保护法，公司法务部决定，目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您一份协议。在签署协议后，才能给您发送本数据集。非常抱歉，这已经是我们能做出的最大努力了:sob:。联系邮箱：kuairand@gmail.com。
-
 
 
 ---
