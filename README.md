@@ -47,9 +47,9 @@ If you find it helpful, please cite our paper:
 ----
 
 ## News！
-**2022.08.23 :tired_face::** Cyberspace Administration of China (CAC) released a very tight implementation schedule to forbid cross-border data transfer on July 7, 2022. The full text of the *Measures for Security Assessment of Cross-border Data Transfer (《数据出境安全评估办法》)* can be found [here](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm) (currently available only in Mandarin Chinese). The Measures will take effect on September 1, 2022. Therefore, **for now, we cannot provide this dataset to institutions outside China** until the legal department of the Kuaishou company passes the security assessment. We sincerely appologize and we will try our best to address this issue.
+**2022.08.23 😫:** Cyberspace Administration of China (CAC) released a very tight implementation schedule to forbid cross-border data transfer on July 7, 2022. The full text of the *Measures for Security Assessment of Cross-border Data Transfer (《数据出境安全评估办法》)* can be found [here](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm) (currently available only in Mandarin Chinese). The Measures will take effect on September 1, 2022. Therefore, **for now, we cannot provide this dataset to institutions outside China** until the legal department of the Kuaishou company passes the security assessment. We sincerely appologize and we will try our best to address this issue.
 
-**2022.08.23 :tired_face::** 国家互联网信息办公室于2022年7月7日出台了非常严格的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们不得已中止对国外机构提供该数据集。**目前仅能将该数据提供给中国境内机构使用**。对此，我们非常无奈，也非常抱歉。当快手公司的法务部解决这一问题后，我们将马上向所有人公开该数据。
+**2022.08.23 😫:** 国家互联网信息办公室于2022年7月7日出台了非常严格的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们不得已中止对国外机构提供该数据集。**目前仅能将该数据提供给中国境内机构使用**。对此，我们非常无奈，也非常抱歉。当快手公司的法务部解决这一问题后，我们将马上向所有人公开该数据。
 
 ---
 
@@ -59,9 +59,9 @@ Due to tight regulations of the Chinese government (as mentioned above), we have
 
 Please send us your *name*, *institution* (which must lie in China) via this email address: kuairand@gmail.com
 
-We are very sorry for the inconvenience! :sob: We will try to overcome this problem soon.
+We are very sorry for the inconvenience! 😭 We will try to overcome this problem soon.
 
-由于国家最近出台的个人隐私信息保护法，公司法务部决定，目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您一份协议。在签署协议后，才能给您发送本数据集。非常抱歉，这已经是我们能做出的最大努力了:sob:。联系邮箱：kuairand@gmail.com。
+由于国家最近出台的个人隐私信息保护法，公司法务部决定，目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您一份协议。在签署协议后，才能给您发送本数据集。非常抱歉，这已经是我们能做出的最大努力了😭。联系邮箱：kuairand@gmail.com。
 
 
 ---
