@@ -55,13 +55,11 @@ If you find it helpful, please cite our paper:
 
 ## Download the data:
 
-Due to regulations of the Chinese government (as mentioned above), for now, we have to use email to make sure that you are a researcher or practitioner in China. Then you have to sign some files to promise that you will NOT disclose this dataset. 
-
-Please send us your *name*, *institution* (which must lie in China) via this email address: kuairand@gmail.com
+Due to regulations of the Chinese government (as mentioned above), for now, we have to use email to make sure that you are a researcher or practitioner in China. Then you have to sign some files to promise that you will NOT disclose this dataset. Please send us your *name*, *institution* (which must lie in China) via this email address: kuairand@gmail.com
 
 We are very sorry for the inconvenience! We will try to overcome this problem soon.
 
-根据国家最近出台的个人隐私信息保护法以及数据出境安全评估办法，我们目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您一份协议。在签署协议后，才能给您发送本数据集。联系邮箱：kuairand@gmail.com
+根据国家最近出台的个人隐私信息保护法以及数据出境安全评估办法，我们目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您相关的保密协议。在签署协议后，才能给您发送本数据集。联系邮箱：kuairand@gmail.com
 
 对此造成的不便，我们深感抱歉。我们将尽快推进向所有人公开数据的进程。
 
