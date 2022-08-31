@@ -49,7 +49,7 @@ If you find it helpful, please cite our paper:
 ## News！
 **2022.08.23:** Cyberspace Administration of China (CAC) released a series of measures to control cross-border data transfer on July 7, 2022. The full text of the *Measures for Security Assessment of Cross-border Data Transfer (《数据出境安全评估办法》)* can be found [here](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm) (currently available only in Mandarin Chinese and there are some English posts such as [this](https://www.morganlewis.com/pubs/2022/08/chinas-cross-border-data-transfer-security-assessment-measures-take-effect-september-1)). The Measures will take effect on September 1, 2022. Therefore, **for now, we cannot provide this dataset to institutions outside China** until CAC completes our assessment and gives us permission to share the data overseas. We sincerely apologize for the inconvenience.
 
-**2022.08.23:** 国家互联网信息办公室于2022年7月7日出台了保护国家安全及个人隐私的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们不得已中止对国外机构提供该数据集，**目前仅能将该数据提供给中国境内机构使用**。在国家互联网信息办公室批准我们的数据处境请求后，我们将马上向所有人公开该数据。
+**2022.08.23:** 国家互联网信息办公室于2022年7月7日出台了保护国家安全及个人隐私的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们按照规定中止对国外机构提供该数据集，**目前仅能将该数据提供给中国境内机构使用**。在国家互联网信息办公室批准我们的数据出境请求后，我们将马上向所有人公开该数据。
 
 **2022.08.02:** Our CIKM '22 paper is accepted.
 
