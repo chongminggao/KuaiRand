@@ -36,14 +36,15 @@ If you find it helpful, please cite our paper:
 ```
 @inproceedings{gao2022kuairand,
   title = {KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos},
-  author = {Chongming Gao and Shijun Li and Yuan Zhang and Jiawei Chen and Biao Li and Wenqiang Lei and Peng Jiang and Xiangnan He},
+  author = {Gao, Chongming and Li, Shijun and Zhang, Yuan and Chen, Jiawei and Li, Biao and Lei, Wenqiang and Jiang, Peng and He, Xiangnan},
   url = {https://doi.org/10.1145/3511808.3557624},
   doi = {10.1145/3511808.3557624},
   booktitle = {Proceedings of the 31st ACM International Conference on Information and Knowledge Management},
   series = {CIKM '22},
   location = {Atlanta, GA, USA},
   numpages = {5},
-  year = {2022}
+  year = {2022},
+  pages = {3953–3957}
 }
 ```
 ----
