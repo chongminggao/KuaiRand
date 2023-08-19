@@ -177,13 +177,13 @@ There are three log files:
 | date              | The date of this interaction                                                                                                   | int64   |     20220421|
 | hourmin           | The time of this interaction (format: HHSS).                                                                                   | int64   |          400|
 | time_ms           | The timestamp of this interaction in millisecond.                                                                          | int64   |1650485801301|
-| is_click          | A binary feedback signal. In the two-column UI, it indicates a click; In the single-column UI, it means *valid_play*: which equals 1 when: `play_duration >= video_duration if video_duration <= 7s`, or `play_duration > 7 if video_duration > 7s`. | int64   | 1     |
+| is_click          | A binary feedback signal. In the two-column UI, it indicates a click; In the single-column UI, it means *valid_play*: which equals 1 when: `play_time_ms >= duration_ms if duration_ms <= 7,000 ms`, or `play_time_ms > 7,000 ms if duration_ms > 7,000 ms`. | int64   | 1     |
 | is_like           | A binary feedback signal indicating the user hit the `like` button.                                                            | int64   |            0|
 | is_follow         | A binary feedback signal indicating the user hit the `follow the author` button.                                               | int64   |            0|
 | is_comment        | A binary feedback signal indicating the user writed comment in the comments section of this video                              | int64   |            0|
 | is_forward        | A binary feedback signal indicating the user forwarded this video.                                                             | int64   |            0|
 | is_hate           | A binary feedback signal indicating the user hated this video.                                                                 | int64   |            0|
-| long_view         | A binary feedback signal. It equals 1 when: `play_duration >= video_duration if video_duration <= 18s`, or `play_duration >=18 if video_duration > 18s`. | int64   |            1|
+| long_view         | A binary feedback signal. It equals 1 when: `play_time_ms >= duration_ms if duration_ms <= 18,000 ms`, or `play_time_ms >=18,000 ms if duration_ms > 18,000 ms`. | int64   |            1|
 | play_time_ms      | The user's view time in millisecond.                                                                                           | int64   |       151024|
 | duration_ms       | The video's duration time in millisecond.                                                                                      | int64   |       104400|
 | profile_stay_time | The time that the user stayed in this author's profile.                                                                        | int64   |            0|
