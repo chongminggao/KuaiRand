@@ -1,6 +1,7 @@
 # KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos 
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRand/blob/main/LICENSE)  [![DOI](https://zenodo.org/badge/DOI/10.1145/3511808.3557624.svg)](https://doi.org/10.1145/3511808.3557624)
+
 *KuaiRand* is an unbiased sequential recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [Kuaishou (快手)](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
 
 Other related **open-sourced** datasets are **[KuaiRec](https://kuairec.com/)** and **[KuaiSAR](https://kuaisar.github.io/)**.
@@ -12,11 +13,11 @@ The following figure gives an example of the dataset. It illustrates a user inte
 
 ![kuaidata](https://cdn.chongminggao.top/figure/KuaiRand-homepage.png)
 
-These feedback signals are collected from the two main user interfaces (UI) in Kuaishou APP shown as follows:
+These feedback signals are collected from the two main user interfaces (UI) in the Kuaishou APP shown as follows:
 
 <img src="https://cdn.chongminggao.top/figure/kuaishou-app.png" alt="kuaishou-app" style="display: block;margin: auto;zoom:35%;" />
 
-In the random exposure stage, each recommended video in the dataset has an equal probability being replaced by a random video sampled from an item pools. About $0.37\%$ Interactions are replaced in the final results. 
+In the random exposure stage, each recommended video in the dataset has an equal probability of being replaced by a random video sampled from an item pool. About $0.37\%$ Interactions are replaced in the final results. 
 
 #### Advantages:
 
@@ -24,7 +25,7 @@ Compared with other datasets with random exposure, KuaiRand has the following ad
 
 - ✅ It is the first sequential recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds.
 - ✅ It has the most comprehensive side information including explicit user IDs, interaction timestamps, and rich features for users and items.
-- ✅ It has 15 policies with each catered for a special recommendation scenario in Kuaishou App.
+- ✅ It has 15 policies with each catered for a special recommendation scenario in the Kuaishou App.
 - ✅ We introduce 12 feedback signals (e.g., click, like, and view time) for each interaction to describe the user's comprehensive feedback.
 - ✅ Each user has thousands of historical interactions on average.
 - ✅ It has three versions to support various research directions in recommendation.
@@ -81,10 +82,10 @@ tar -xzvf KuaiRand-27K.tar.gz
 
 ## Three Versions and Suggestions:
 
-We release three versions of KuaiRand for different usage:
+We release three versions of KuaiRand for different uses:
 
-- **KuaiRand-27K (23GB logs +23GB features):** the complete KuaiRand dataset that has over 27K users and 32 millions videos.
-- **KuaiRand-1K  (829MB logs + 3.5GB features):** randomly sample 1,000 users from *KuaiRand-27K*, then remove all irrelevant videos. There are 4 millions videos rest. 
+- **KuaiRand-27K (23GB logs +23GB features):** the complete KuaiRand dataset that has over 27K users and 32 million videos.
+- **KuaiRand-1K  (829MB logs + 3.5GB features):** randomly sample 1,000 users from *KuaiRand-27K*, then remove all irrelevant videos. There are 4 million videos rest. 
 - **KuaiRand-Pure  (184MB logs + 10MB features):** only keeps the logs for the 7583 videos in the candidate pool. 
 
 The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces is shown as follows.
@@ -111,7 +112,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 - ##### Reasons to use *KuaiRand-Pure*:
 
-  - The sequential information is not necessary in your research OR If you are OK with the incomplete sequential logs. For example, if you are studying debiasing in collaborative filtering models or multi-task modeling in recommendation.
+  - The sequential information is not necessary for your research OR If you are OK with the incomplete sequential logs. For example, if you are studying debiasing in collaborative filtering models or multi-task modeling in recommendation.
   - If your model can only run with small-size data.
 
 
@@ -119,7 +120,7 @@ The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces 
 
 ## Data Descriptions
 
-The file structure of the three datasets are listed as follows:
+The file structure of the three datasets is listed as follows:
 
 ##### KuaiRand-27K (46GB)
 
@@ -169,11 +170,11 @@ The file structure of the three datasets are listed as follows:
 
 ---
 
-####  1️⃣ Descriptions of the fields in `log_xxx.csv` 
+####  1️⃣ Description of the fields in `log_xxx.csv` 
 
 There are three log files:
 
-- `log_random_4_22_to_5_08.csv` contains all interactions resulted from random intervention.
+- `log_random_4_22_to_5_08.csv` contains all interactions resulting from random intervention.
 - `log_standard_4_22_to_5_08.csv` contains all interactions of standard recommendation.
 - `log_standard_4_08_to_4_21.csv` contains all interactions of standard recommendation for the same users in the previous two weeks (2022.04.08 ~ 2022.04.21).
 
@@ -183,21 +184,21 @@ There are three log files:
 | video_id          | The ID of the video.                                                                                                           | int64   |      1123453|
 | date              | The date of this interaction                                                                                                   | int64   |     20220421|
 | hourmin           | The time of this interaction (format: HHSS).                                                                                   | int64   |          400|
-| time_ms           | The timestamp of this interaction in millisecond.                                                                          | int64   |1650485801301|
+| time_ms           | The timestamp of this interaction in milliseconds.                                                                          | int64   |1650485801301|
 | is_click          | A binary feedback signal. In the two-column UI, it indicates a click; In the single-column UI, it means *valid_play*: which equals 1 when: `play_time_ms >= duration_ms if duration_ms <= 7,000 ms`, or `play_time_ms > 7,000 ms if duration_ms > 7,000 ms`. | int64   | 1     |
 | is_like           | A binary feedback signal indicating the user hit the `like` button.                                                            | int64   |            0|
 | is_follow         | A binary feedback signal indicating the user hit the `follow the author` button.                                               | int64   |            0|
-| is_comment        | A binary feedback signal indicating the user writed comment in the comments section of this video                              | int64   |            0|
+| is_comment        | A binary feedback signal indicating the user wrote a comment in the comments section of this video                              | int64   |            0|
 | is_forward        | A binary feedback signal indicating the user forwarded this video.                                                             | int64   |            0|
 | is_hate           | A binary feedback signal indicating the user hated this video.                                                                 | int64   |            0|
 | long_view         | A binary feedback signal. It equals 1 when: `play_time_ms >= duration_ms if duration_ms <= 18,000 ms`, or `play_time_ms >=18,000 ms if duration_ms > 18,000 ms`. | int64   |            1|
-| play_time_ms      | The user's view time in millisecond.                                                                                           | int64   |       151024|
-| duration_ms       | The video's duration time in millisecond.                                                                                      | int64   |       104400|
+| play_time_ms      | The user's view time in milliseconds.                                                                                           | int64   |       151024|
+| duration_ms       | The video's duration time in milliseconds.                                                                                      | int64   |       104400|
 | profile_stay_time | The time that the user stayed in this author's profile.                                                                        | int64   |            0|
 | comment_stay_time | The time that the user stayed in the comments section of this video                                                            | int64   |            0|
 | is_profile_enter  | A binary feedback signal indicating the user enters the author profile                                                         | int64   |            0|
 | is_rand           | A binary signal indicating if this video is generated by the random intervention (i.e., a random exposed video). | int64   |            0|
-| tab               | indicating the scenario of this interaction, e.g., in the recommendation page or the main page of the App. In range of [0,14]. | int64   |            1|
+| tab               | indicating the scenario of this interaction, e.g., in the recommendation page or the main page of the App. In the range of [0,14]. | int64   |            1|
 
 ---
 
@@ -218,7 +219,7 @@ There are three log files:
 | friend_user_num_range    | The range of the number of friends that this user has.  In the set of {'0', '[1,5)', '[5,30)', '[30,60)', '[60,120)', '[120,250)', '250+'} | str    |           "0"  |
 | register_days            | The days since this user has registered. | int64    |     3624    |
 | register_days_range      | The range of the registered days. In the set of {'15-30', '31-60', '61-90', '91-180', '181-365', '366-730', '730+'}. | str    |    "730+"  |
-| onehot_feat0             | An encrypted feature of the user. Each value indicate the position of "1" in the one-hot vector. Range: {0,1} | int64    |          1    |
+| onehot_feat0             | An encrypted feature of the user. Each value indicates the position of "1" in the one-hot vector. Range: {0,1} | int64    |          1    |
 | onehot_feat1             | An encrypted feature. Range: {0, 1, ..., 6} | int64    |          2    |
 | onehot_feat2             | An encrypted feature. Range: {0, 1, ..., 49} | int64    |          2    |
 | onehot_feat3             | An encrypted feature. Range: {0, 1, ..., 1470} | int64    |     1153    |
@@ -249,7 +250,7 @@ There are three log files:
 | upload_dt      | Upload date of this video.                                   | str   | "2020-07-08"  |
 | upload_type    | The upload type of this video.                               | str   | "ShortImport" |
 | visible_status | The visible state of this video on the APP now.              | int   | 1             |
-| video_duration | The time duration of this duration (in millisecond).         | Int64 | 17200.0       |
+| video_duration | The time duration of this duration (in milliseconds).         | Int64 | 17200.0       |
 | server_width   | The width of this video on the server.                       | int64 | 720           |
 | server_height  | The height of this video on the server.                      | int64 | 1280          |
 | music_id       | Background music ID of this video.                           | int64 | 989206467     |
@@ -260,17 +261,17 @@ There are three log files:
 
 #### 4️⃣ Descriptions of the fields in `video_features_statistic.csv`
 
-‼️ Different from the basic features, the statistical features are the average statistics of the video each day over the one month. For example, in the following table, the video 9288071 have 66 counts over this one month (a video can have multiple counts each day on different scenarios, e.g., on April 8, `show_cnt`=80 on the main page and `show_cnt`=65 on the recommendation page of the App)
+‼️ Different from the basic features, the statistical features are the average statistics of the video each day over one month. For example, in the following table, video 9288071 has 66 counts over this one month (a video can have multiple counts each day on different scenarios, e.g., on April 8, `show_cnt`=80 on the main page and `show_cnt`=65 on the recommendation page of the App)
 
 | Field Name:              | Description                                                  | Type    | Example   |
 | ------------------------ | ------------------------------------------------------------ | ------- | --------- |
 | video_id                 | The ID of the video.                                         | int64   | 9288071   |
 | counts                   | The number of statistics.                                    | int64   | 66        |
-| show_cnt                 | The number of shows of this video **(averaged on each day and each scenario over the one month. This applies to all the following fields)** | float64 | 75.212    |
+| show_cnt                 | The number of shows of this video **(averaged on each day and each scenario over one month. This applies to all the following fields)** | float64 | 75.212    |
 | show_user_num            | The number of users who received the recommendation of this video. | float64 | 66.985    |
 | play_cnt                 | The number of plays.                                         | float64 | 9.409     |
-| play_user_num            | The number of users who plays this video.                    | float64 | 8.121     |
-| play_duration            | The total time duration of playing this video (in millisecond). | float64 | 93700.333 |
+| play_user_num            | The number of users who play this video.                    | float64 | 8.121     |
+| play_duration            | The total time duration of playing this video (in milliseconds). | float64 | 93700.333 |
 | complete_play_cnt        | The number of complete plays. *complete play*: finishing playing the whole video, i.e., `#(play_duration >= video_duration)`. | float64 | 0.182     |
 | complete_play_user_num   | The number of users who perform the *complete play*.         | float64 | 0.182     |
 | valid_play_cnt           | *valid play*: `play_duration >= video_duration if video_duration <= 7s`, or `play_duration > 7 if video_duration > 7s`. | float64 | 3.545     |
@@ -284,11 +285,11 @@ There are three log files:
 | like_cnt                 | Total likes                                                  | float64 | 0.303     |
 | like_user_num            | The number of users who hit the "like" button.               | float64 | 0.303     |
 | click_like_cnt           | The number of the "like" resulted from double click          | float64 | 0.030     |
-| double_click_cnt         | The number of users who double click the video.              | float64 | 0.273     |
-| cancel_like_cnt          | The number of likes that are cancelled by users.             | float64 | 0.485     |
-| cancel_like_user_num     | The number of users who cancel their like.                   | float64 | 0.485     |
+| double_click_cnt         | The number of users who double-click the video.              | float64 | 0.273     |
+| cancel_like_cnt          | The number of likes that are canceled by users.             | float64 | 0.485     |
+| cancel_like_user_num     | The number of users who cancel their likes.                   | float64 | 0.485     |
 | comment_cnt              | The number of comments within this day.                      | float64 | 0.015     |
-| comment_user_num         | The number of users who comment this video.                  | float64 | 0.015     |
+| comment_user_num         | The number of users who comment on this video.                  | float64 | 0.015     |
 | direct_comment_cnt       | The number of direct comments (depth=1).                     | float64 | 0.015     |
 | reply_comment_cnt        | The number of reply comments (depth>1).                      | float64 | 0.000     |
 | delete_comment_cnt       | The number of deleted comments.                              | float64 | 0.015     |
