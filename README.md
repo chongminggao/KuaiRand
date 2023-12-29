@@ -1,10 +1,9 @@
 # KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos 
 
-[![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRand/blob/main/LICENSE)
-
+[![LICENSE](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green)](https://github.com/chongminggao/KuaiRand/blob/main/LICENSE)  [![DOI](https://zenodo.org/badge/DOI/10.1145/3511808.3557624.svg)](https://doi.org/10.1145/3511808.3557624)
 *KuaiRand* is an unbiased sequential recommendation dataset collected from the recommendation logs of the video-sharing mobile app, [Kuaishou (快手)](https://www.kuaishou.com/cn).  **It is the first recommendation dataset with millions of  intervened interactions of randomly exposed items inserted in the standard recommendation feeds!** 
 
-Another related **open-sourced** dataset is **[KuaiRec](https://kuairec.com/)**.
+Other related **open-sourced** datasets are **[KuaiRec](https://kuairec.com/)** and **[KuaiSAR](https://kuaisar.github.io/)**.
 
 
 ## Overview:
@@ -49,26 +48,34 @@ If you find it helpful, please cite our paper:
 ```
 ----
 
-## News！
-
-**2022.08.23:** Cyberspace Administration of China (CAC) released a series of measures to control cross-border data transfer on July 7, 2022. The full text of the *Measures for Security Assessment of Cross-border Data Transfer (《数据出境安全评估办法》)* can be found [here](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm) (currently available only in Mandarin Chinese and there are some English posts such as [this](https://www.morganlewis.com/pubs/2022/08/chinas-cross-border-data-transfer-security-assessment-measures-take-effect-september-1)). The Measures will take effect on September 1, 2022. Therefore, **for now, we cannot provide this dataset to institutions outside China** until CAC completes our assessment and gives us permission to share the data overseas. We sincerely apologize for the inconvenience. 
-
-**2022.08.23:** 国家互联网信息办公室于2022年7月7日出台了保护国家安全及个人隐私的[《数据出境安全评估办法》](http://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm)，于2022年9月1日开始执行。其规定公司数据不能跨境自由流动。于是我们按照规定中止对国外机构提供该数据集，**目前仅能将该数据提供给中国境内机构使用**。在国家互联网信息办公室批准我们的数据出境请求后，我们将马上向所有人公开该数据。
-
-**2022.08.02:** Our CIKM '22 paper is accepted.
-
-**2022.06.02:** The paper introducing this dataset is submitted to CIKM '22 Resource Track.
-
----
 
 ## Download the data:
-Due to regulations of the Chinese government (as mentioned above), for now, we have to use email to make sure that you are a researcher or practitioner in China. Then you have to sign some files to promise that you will NOT disclose this dataset. Please send us your *name*, *institution* (which must lie in China) via this email address: kuairand@gmail.com
+KuaiRand has been shared at [https://zenodo.org/records/10439422](https://zenodo.org/records/10439422).
 
-We are very sorry for the inconvenience! We will try to overcome this problem soon.
+**OPTION 1. Download via your browser:**
 
-根据国家最近出台的个人隐私信息保护法以及数据出境安全评估办法，我们目前只提供数据集给中国机构（大学、研究所、公司），且需要您将您的*姓名*、*机构信息*发给我方，我们将回复您相关的保密协议。在签署协议后，才能给您发送本数据集。联系邮箱：kuairand@gmail.com
+You can download the dataset from the [zenodo site](https://zenodo.org/records/10439422), or this [Chinese site](https://rec.ustc.edu.cn/share/7f5a44c0-c196-11ed-b626-81cd6a642112).
 
-对此造成的不便，我们深感抱歉。我们将尽快推进向所有人公开数据的进程。
+
+**OPTION 2: Download via the 'wget' command tool:**
+
+For the **KuaiRand-Pure** dataset:
+```shell
+wget https://zenodo.org/records/10439422/files/KuaiRand-Pure.tar.gz # (md5:0820331067a3784d9691136f772b35a7)
+tar -xzvf KuaiRand-Pure.tar.gz
+```
+
+For the **KuaiRand-1K** dataset:
+```shell
+wget https://zenodo.org/records/10439422/files/KuaiRand-1K.tar.gz #  (md5:6b0b9c8222d67fcd4c676218edca3f1f)
+tar -xzvf KuaiRand-1K.tar.gz
+```
+
+For the **KuaiRand-27K** dataset:
+```shell
+wget https://zenodo.org/records/10439422/files/KuaiRand-27K.tar.gz # (md5:3e3c799a24e2d23a4d2c757fbf9adf59)
+tar -xzvf KuaiRand-27K.tar.gz
+```
 
 ---
 
