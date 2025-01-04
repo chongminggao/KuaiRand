@@ -11,11 +11,11 @@ Other related **open-sourced** datasets are **[KuaiRec](https://kuairec.com/)** 
 
 The following figure gives an example of the dataset. It illustrates a user interaction sequence along with the user's rich feedback signals.
 
-![kuaidata](https://cdn.chongminggao.top/figure/KuaiRand-homepage.png)
+![kuaidata](figs/KuaiRand-homepage.png)
 
 These feedback signals are collected from the two main user interfaces (UI) in the Kuaishou APP shown as follows:
 
-<img src="https://cdn.chongminggao.top/figure/kuaishou-app.png" alt="kuaishou-app" style="display: block;margin: auto;zoom:35%;" />
+<img src="figs/kuaishou-app.png" alt="kuaishou-app" style="display: block;margin: auto;zoom:35%;" />
 
 In the random exposure stage, each recommended video in the dataset has an equal probability of being replaced by a random video sampled from an item pool. About $0.37\%$ Interactions are replaced in the final results. 
 
@@ -90,7 +90,7 @@ We release three versions of KuaiRand for different uses:
 
 The *user_id* and *video_id* are re-indexed. A visualization of their ID spaces is shown as follows.
 
-![kuaidata](https://cdn.chongminggao.top/figure/three-version.png)
+![kuaidata](figs/three-version.png)
 
 ##### The basic statistics of the three versions are summarized as follows:
 
