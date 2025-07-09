@@ -180,7 +180,7 @@ There are three log files:
 
 | Field Name:       | Description                                                                                                                    | Type    | Example   |
 | ----------------- | ------------------------------------------------------------                                                                   | ------- | --------- |
-| user_id           | The ID of the video.                                                                                                           | int64   |        17387|
+| user_id           | The ID of the user.                                                                                                           | int64   |        17387|
 | video_id          | The ID of the video.                                                                                                           | int64   |      1123453|
 | date              | The date of this interaction                                                                                                   | int64   |     20220421|
 | hourmin           | The time of this interaction (format: HHSS).                                                                                   | int64   |          400|
