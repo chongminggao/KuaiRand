@@ -77,7 +77,7 @@ wget https://zenodo.org/records/10439422/files/KuaiRand-27K.tar.gz # (md5:3e3c79
 tar -xzvf KuaiRand-27K.tar.gz
 ```
 
-**Attention:** We further provide two supplementary files that enrich the KuaiRand dataset with **video-level content-side semantic information**, namely `kuairand_video_categories.csv` and `kuairand_video_captions.csv`. Detailed descriptions and download links for these two files are provided [here](#-additional-video-level-metadata-supplementary-files-️).
+**Attention:** We further provide two supplementary files that enrich the KuaiRand dataset with **video-level content-side semantic information**, namely `kuairand_video_categories.csv` and `kuairand_video_captions.csv`. Detailed descriptions and download links for these two files are provided [here](#additional-video-level-metadata-supplementary-files).
 
 ---
 
@@ -324,7 +324,7 @@ There are three log files:
 
 
 
-## ‼️ Additional Video-Level Metadata (Supplementary Files) ‼️ 
+## Additional Video-Level Metadata (Supplementary Files) 
 
 We further provide two supplementary files that enrich KuaiRand with **content-side semantic information** at the video level. These files can be joined with the main dataset using `final_video_id`.
 
