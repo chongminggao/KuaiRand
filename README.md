@@ -57,7 +57,6 @@ KuaiRand has been shared at [https://zenodo.org/records/10439422](https://zenodo
 
 You can download the dataset from the [zenodo site](https://zenodo.org/records/10439422), or this [Chinese site](https://rec.ustc.edu.cn/share/7f5a44c0-c196-11ed-b626-81cd6a642112).
 
-
 **OPTION 2: Download via the 'wget' command tool:**
 
 For the **KuaiRand-Pure** dataset:
@@ -77,6 +76,8 @@ For the **KuaiRand-27K** dataset:
 wget https://zenodo.org/records/10439422/files/KuaiRand-27K.tar.gz # (md5:3e3c799a24e2d23a4d2c757fbf9adf59)
 tar -xzvf KuaiRand-27K.tar.gz
 ```
+
+**Attention:** We further provide two supplementary files that enrich the KuaiRand dataset with **video-level content-side semantic information**, namely `kuairand_video_categories.csv` and `kuairand_video_captions.csv`. Detailed descriptions and download links for these two files are provided **at the bottom of this page**.
 
 ---
 
@@ -318,3 +319,67 @@ There are three log files:
 | share_all_user_num       | The number of users who share this video (no need to be successful). | float64 | 0.015     |
 | outsite_share_all_cnt    | The times of sharing this video outside Kuaishou App.        | float64 | 0.000     |
 
+
+---
+
+
+
+## ‼️ Additional Video-Level Metadata (Supplementary Files) ‼️ 
+
+We further provide two supplementary files that enrich KuaiRand with **content-side semantic information** at the video level. These files can be joined with the main dataset using `final_video_id`.
+
+Two files: `kuairand_video_captions.csv` and `kuairand_video_categories.csv` are available via [https://zenodo.org/records/18159199](https://zenodo.org/records/18159199)
+
+or you can just download  via the **'wget' command tool:**
+
+1. `kuairand_video_captions.csv`:
+
+```shell
+wget https://zenodo.org/records/18159199/files/kuairand_video_captions.csv # (md5:9fd4e7587ffd0c8dc289d013858fb229)
+```
+
+2. `kuairand_video_categories.csv`:
+
+```shell
+wget https://zenodo.org/records/18159199/files/kuairand_video_categories.csv #  (md5:8a4c772d3d8f8cf65fa1e1eb896f4177)
+```
+
+
+
+### 📄 Descriptions of the fields in `kuairand_video_captions.csv`
+
+| Field Name:        | Description                                                                 | Type    | Example |
+| ----------------- | --------------------------------------------------------------------------- | ------- | ------- |
+| final_video_id    | The re-indexed ID of the video, consistent with KuaiRand.                   | int64   | 6       |
+| caption           | The main caption text of the video, including hashtags and mentions.        | str     | `#王者荣耀妲己秀 #游戏凡星计划 刺客法爆流妲己教程在下方小黄车哟！` |
+| show_cover_text   | Text displayed on the video cover (may be empty).                           | str     | `妲己打亚瑟 就怕他六分投` |
+| duration          | Video duration in milliseconds.                                             | float64 | 114500.0 |
+
+This file provides **textual and semantic content information** of videos, which can be used for multimodal recommendation, text-aware modeling, and content understanding tasks.
+
+---
+
+### 📄 Descriptions of the fields in `kuairand_video_categories.csv`
+
+| Field Name:                    | Description                                                                 | Type    | Example |
+| ----------------------------- | --------------------------------------------------------------------------- | ------- | ------- |
+| final_video_id                | The re-indexed ID of the video, consistent with KuaiRand.                   | int64   | 3       |
+| first_level_category_id       | ID of the first-level (top) category.                                       | float64 | 7.0     |
+| first_level_category_name     | Name of the first-level category.                                           | str     | `运动` |
+| first_level_category_prob     | Prediction probability of the first-level category.                        | float64 | 0.9996  |
+| second_level_category_id      | ID of the second-level category.                                            | float64 | 126.0   |
+| second_level_category_name    | Name of the second-level category.                                          | str     | `球类运动` |
+| second_level_category_prob    | Prediction probability of the second-level category.                       | float64 | 1.0     |
+| third_level_category_id       | ID of the third-level category (if available).                              | float64 | 1056.0  |
+| third_level_category_name     | Name of the third-level category.                                           | str     | `篮球` |
+| third_level_category_prob     | Prediction probability of the third-level category.                        | float64 | 1.0     |
+| fourth_level_category_id      | ID of the fourth-level category (if available).                             | float64 | -124.0  |
+| fourth_level_category_name    | Name of the fourth-level category (`UNKNOWN` if unavailable).              | str     | `UNKNOWN` |
+| fourth_level_category_prob    | Prediction probability of the fourth-level category.                       | float64 | 0.0     |
+
+The category system is **hierarchical (up to four levels)**.  
+If a category level is unavailable, its ID is set to `-124` and the name to `UNKNOWN`.
+
+This file enables research on **category-aware recommendation**, **hierarchical classification**, and **content taxonomy modeling**.
+
+---
